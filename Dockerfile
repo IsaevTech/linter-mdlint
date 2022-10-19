@@ -1,4 +1,4 @@
-FROM node:18-slim
+FROM node:19-slim
 RUN npm install markdownlint-cli2@0.4.0 --location=global
 COPY lint /usr/local/bin/lint
 WORKDIR /code
